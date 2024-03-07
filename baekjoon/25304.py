@@ -36,10 +36,10 @@ else:
 import sys
 input = sys.stdin.readline
 total = int(input())
-for i in range(int(input())):
+for i in range(int(input())):   # 받아들인 갯수만큼 for문 하겠다.
     a, b = map(int,input().split())
     total -= a * b  # good idea
-print("Yes" if total == 0 else "No") # good expression
+print("Yes" if total == 0 else "No") # good expression  삼항 조건 연산자
 
 
 

@@ -27,7 +27,6 @@
 # your_dog.sit()
 # print(f"너의 개는 {your_dog.name}")
 
-
 # 9-2
 class Restaurant :
     def __init__(self, rname, rtype):
@@ -103,14 +102,7 @@ class Car:
     def increment_odometer(self, miles):
         self.odometer_reading += miles
 
-my_new_car = Car('audi', 'a4', '2024')
-print(my_new_car.get_descriptive_name())
 
-my_new_car.odometer_reading = 23
-my_new_car.update_odometer(20)
-my_new_car.increment_odometer(20)
-
-my_new_car.read_odometer()
 
 class Battery :
     """배터리"""
