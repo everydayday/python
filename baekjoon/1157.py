@@ -1,4 +1,6 @@
-alphabets = list(input())
+
+#alphabets = list(input())
+alphabets ="aabbc"
 count = 0
 max_str = alphabets[0]
 flag = False
@@ -18,6 +20,8 @@ else:
 
 
 #### 
-from collections import Counter
-print(Counter("hello world").most_common(1)[0][0]) # 튜플로 온거
+# from collections import Counter
+# print(Counter("hello world").most_common(1)[0][0]) # 튜플로 온거
     
+
+
