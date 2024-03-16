@@ -5,3 +5,4 @@ BULLET_COLOR = (255,0,0)
 SHIP_IMAGE_PATH = './imgs/ship.bmp'
 SHIP_SPEED = 100
 BULLET_SPEED = 5
+ALIEN_IMAGE_PATH = './imgs/alien.bmp'

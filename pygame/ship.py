@@ -1,14 +1,14 @@
+
 import pygame
 import sys
 import setting
+from alien import Alien
 from util import update_bullet, create, update_key, create_bullet
 
 pygame.init()
 
 
 screen, screen_rect, clock, image, ship, ship_rect = create()
-
-
 
 
 bullet = create_bullet(ship_rect)
@@ -26,7 +26,7 @@ while True:
     
     # Process player inputs.
     for event in pygame.event.get(): # 키보드, 마우스
-        if event.type == pygame.QUIT:
+        if event.type == pygame.QUIT or event.type == pygame.K_q :
             pygame.quit()
             sys.exit()
             raise SystemExit # exception 발생 시키는 것
@@ -47,10 +47,12 @@ while True:
         else :
             bullets.remove(bullet)
 
-
+    alien = Alien(image)
+    
+    
         
 
-
+    screen.blit(alien.image,alien)
     screen.blit(image,ship)
 
     update_bullet(screen, bullets)
